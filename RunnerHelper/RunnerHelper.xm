@@ -5,34 +5,23 @@
 #endif
 
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "LRRecordViewController.h"
+#import "FMTradeOrderDetailViewModel.h"
 
-%hook ClassName
 
-+ (id)sharedInstance
+@interface FMTradeOrderDetailViewController : UIViewController
+@property(retain, nonatomic) FMTradeOrderDetailViewModel *vm;
+@end
+
+%hook FMTradeOrderDetailViewController
+-(void) rightAction:(id) sender
 {
-	%log;
-
-	return %orig;
-}
-
-- (void)messageWithNoReturnAndOneArgument:(id)originalArgument
-{
-	%log;
-
-	%orig(originalArgument);
-	
-	// or, for exmaple, you could use a custom value instead of the original argument: %orig(customValue);
-}
-
-- (id)messageWithReturnAndNoArguments
-{
-	%log;
-
-	id originalReturnOfMessage = %orig;
-	
-	// for example, you could modify the original return value before returning it: [SomeOtherClass doSomethingToThisObject:originalReturnOfMessage];
-
-	return originalReturnOfMessage;
+//替换功能
+    __weak __typeof__(self) weakSelf = self;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [weakSelf presentViewController:[LRRecordViewController alertWithKey:weakSelf.vm.tid] animated:YES completion:nil];
+    });
 }
 
 %end

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1882EAED221CF0FB00838BC7 /* LRRecordViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1882EAEB221CF0FB00838BC7 /* LRRecordViewController.h */; };
+		1882EAEE221CF0FB00838BC7 /* LRRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1882EAEC221CF0FB00838BC7 /* LRRecordViewController.m */; };
+		1882EAF2221CFAE600838BC7 /* LRRecordTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 1882EAF0221CFAE600838BC7 /* LRRecordTool.h */; };
+		1882EAF3221CFAE600838BC7 /* LRRecordTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1882EAF1221CFAE600838BC7 /* LRRecordTool.m */; };
+		1882EAF6221CFEFC00838BC7 /* FMTradeOrderDetailViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1882EAF5221CFEFB00838BC7 /* FMTradeOrderDetailViewModel.h */; };
 		188A0A29221CED0300FDE1C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188A0A28221CED0300FDE1C1 /* UIKit.framework */; };
 		188A0A2B221CED0400FDE1C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188A0A2A221CED0400FDE1C1 /* Foundation.framework */; };
 		188A0A2D221CED0400FDE1C1 /* CydiaSubstrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188A0A2C221CED0400FDE1C1 /* CydiaSubstrate.framework */; };
@@ -14,13 +19,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1882EAEB221CF0FB00838BC7 /* LRRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRRecordViewController.h; sourceTree = "<group>"; };
+		1882EAEC221CF0FB00838BC7 /* LRRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRRecordViewController.m; sourceTree = "<group>"; };
+		1882EAF0221CFAE600838BC7 /* LRRecordTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRRecordTool.h; sourceTree = "<group>"; };
+		1882EAF1221CFAE600838BC7 /* LRRecordTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRRecordTool.m; sourceTree = "<group>"; };
+		1882EAF5221CFEFB00838BC7 /* FMTradeOrderDetailViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMTradeOrderDetailViewModel.h; sourceTree = "<group>"; };
 		188A0A25221CED0300FDE1C1 /* RunnerHelper.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = RunnerHelper.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		188A0A28221CED0300FDE1C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		188A0A2A221CED0400FDE1C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		188A0A2C221CED0400FDE1C1 /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CydiaSubstrate.framework; path = Library/Frameworks/CydiaSubstrate.framework; sourceTree = DEVELOPER_DIR; };
 		188A0A31221CED0400FDE1C1 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
 		188A0A33221CED0400FDE1C1 /* RunnerHelper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RunnerHelper-Prefix.pch"; sourceTree = "<group>"; };
-		188A0A34221CED0400FDE1C1 /* RunnerHelper.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = RunnerHelper.xm; sourceTree = "<group>"; };
+		188A0A34221CED0400FDE1C1 /* RunnerHelper.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp.preprocessed; path = RunnerHelper.xm; sourceTree = "<group>"; };
 		188A0A35221CED0400FDE1C1 /* RunnerHelper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RunnerHelper.mm; sourceTree = "<group>"; };
 		188A0A3A221CED0400FDE1C1 /* RunnerHelper.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = RunnerHelper.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/RunnerHelper.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -39,6 +49,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1882EAE9221CF0CA00838BC7 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				1882EAEF221CFAD300838BC7 /* Tool */,
+				1882EAEA221CF0D800838BC7 /* ViewController */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		1882EAEA221CF0D800838BC7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1882EAEB221CF0FB00838BC7 /* LRRecordViewController.h */,
+				1882EAEC221CF0FB00838BC7 /* LRRecordViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1882EAEF221CFAD300838BC7 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				1882EAF0221CFAE600838BC7 /* LRRecordTool.h */,
+				1882EAF1221CFAE600838BC7 /* LRRecordTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		1882EAF4221CFEF300838BC7 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				1882EAF5221CFEFB00838BC7 /* FMTradeOrderDetailViewModel.h */,
+			);
+			path = headers;
+			sourceTree = "<group>";
+		};
 		188A0A1A221CED0300FDE1C1 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +114,8 @@
 		188A0A2E221CED0400FDE1C1 /* RunnerHelper */ = {
 			isa = PBXGroup;
 			children = (
+				1882EAF4221CFEF300838BC7 /* headers */,
+				1882EAE9221CF0CA00838BC7 /* classes */,
 				188A0A34221CED0400FDE1C1 /* RunnerHelper.xm */,
 				188A0A35221CED0400FDE1C1 /* RunnerHelper.mm */,
 				188A0A2F221CED0400FDE1C1 /* Package */,
@@ -133,6 +180,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1882EAF6221CFEFC00838BC7 /* FMTradeOrderDetailViewModel.h in Headers */,
+				1882EAED221CF0FB00838BC7 /* LRRecordViewController.h in Headers */,
+				1882EAF2221CFAE600838BC7 /* LRRecordTool.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +281,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				188A0A36221CED0400FDE1C1 /* RunnerHelper.mm in Sources */,
+				1882EAF3221CFAE600838BC7 /* LRRecordTool.m in Sources */,
+				1882EAEE221CF0FB00838BC7 /* LRRecordViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,12 +364,12 @@
 				MonkeyDevBuildPackageOnAnyBuild = NO;
 				MonkeyDevClearUiCacheOnInstall = NO;
 				MonkeyDevCopyOnBuild = NO;
-				MonkeyDevDeviceIP = "";
-				MonkeyDevDevicePassword = "";
-				MonkeyDevDevicePort = "";
+				MonkeyDevDeviceIP = 127.0.0.1;
+				MonkeyDevDevicePassword = alpine;
+				MonkeyDevDevicePort = 2222;
 				MonkeyDevInstallOnAnyBuild = YES;
 				MonkeyDevInstallOnProfiling = YES;
-				MonkeyDevkillProcessOnInstall = SpringBoard;
+				MonkeyDevkillProcessOnInstall = Runner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,12 +390,12 @@
 				MonkeyDevBuildPackageOnAnyBuild = NO;
 				MonkeyDevClearUiCacheOnInstall = NO;
 				MonkeyDevCopyOnBuild = NO;
-				MonkeyDevDeviceIP = "";
-				MonkeyDevDevicePassword = "";
-				MonkeyDevDevicePort = "";
+				MonkeyDevDeviceIP = 127.0.0.1;
+				MonkeyDevDevicePassword = alpine;
+				MonkeyDevDevicePort = 2222;
 				MonkeyDevInstallOnAnyBuild = YES;
 				MonkeyDevInstallOnProfiling = YES;
-				MonkeyDevkillProcessOnInstall = SpringBoard;
+				MonkeyDevkillProcessOnInstall = Runner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

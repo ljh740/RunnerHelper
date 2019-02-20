@@ -1,9 +1,9 @@
 Package: com.darkedge.RunnerHelper
 Name: RunnerHelper
 Version: 0.1-1
-Description: 
+Description: 闲鱼订单添加备忘录功能
 Section: System
-Depends: firmware (>= 5.0), mobilesubstrate
+Depends: firmware (>= 7.0), mobilesubstrate
 Conflicts: 
 Replaces: 
 Priority: optional
